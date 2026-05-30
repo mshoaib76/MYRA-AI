@@ -112,12 +112,11 @@ downlaod the apk file [here](https://github.com/mshoaib76/MYRA-AI/tree/main/apk)
 
 | Bolo | Kaam |
 |------|------|
-| WhatsApp kholo | App open |
+| WhatsApp kholo | App open | 
 | App band karo / close app | Current app close (Accessibility ON) |
 | Back karo | Back button |
 | Ali ko whatsapp par message karo salam | WhatsApp chat |
 | 03001234567 ko whatsapp message karo hello | Number par WhatsApp |
-| Unlock whatsapp | Vault password (Settings → Admin) |
 | Tumhe kis ne banaya? | Creator answer (Muhammad Shoaib) |
 
 ## Test Checklist
