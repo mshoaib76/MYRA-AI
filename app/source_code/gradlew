@@ -1,0 +1,5 @@
+#!/bin/sh
+# Gradle wrapper for Unix (Android Studio / macOS / Linux)
+APP_HOME=$(cd "$(dirname "$0")" && pwd)
+CLASSPATH="$APP_HOME/gradle/wrapper/gradle-wrapper.jar"
+exec "${JAVA_HOME:-java}/bin/java" -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"

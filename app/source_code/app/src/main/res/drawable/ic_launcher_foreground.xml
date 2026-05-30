@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer glow ring -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M54,12a42,42 0 1,1 0,84a42,42 0 1,1 0,-84"
+        android:fillAlpha="0.18" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,18a36,36 0 1,1 0,72a36,36 0 1,1 0,-72"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FF1744" />
+    <!-- Mic body -->
+    <path
+        android:fillColor="#FF1744"
+        android:pathData="M54,34c-6.6,0 -12,5.4 -12,12v10c0,6.6 5.4,12 12,12s12,-5.4 12,-12V46c0,-6.6 -5.4,-12 -12,-12z" />
+    <path
+        android:fillColor="#FF1744"
+        android:pathData="M42,58c0,8.8 5.4,16.2 13,19.2V82h-4v6h22v-6h-4v-4.8c7.6,-3 13,-10.4 13,-19.2h-6c0,6.6 -5.4,12 -12,12s-12,-5.4 -12,-12z" />
+    <!-- AI wave bars -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M30,52h4v14h-4z M74,48h4v18h-4z M24,56h3v8h-3z M81,54h3v10h-3z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,42c2.2,0 4,1.8 4,4s-1.8,4 -4,4 -4,-1.8 -4,-4 1.8,-4 4,-4z"
+        android:fillAlpha="0.9" />
+</vector>

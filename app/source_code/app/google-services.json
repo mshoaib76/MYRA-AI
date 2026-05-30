@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "151707671173",
+    "project_id": "voicemind-5998a",
+    "storage_bucket": "voicemind-5998a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151707671173:android:eebdc20765eb9d317ea7ec",
+        "android_client_info": {
+          "package_name": "com.example.voicemind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCISM5x0cHxTuZyNEofJ4w9oIiypvFHUKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151707671173:android:a3c8cf23b3e1b0717ea7ec",
+        "android_client_info": {
+          "package_name": "com.myra.assistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCISM5x0cHxTuZyNEofJ4w9oIiypvFHUKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

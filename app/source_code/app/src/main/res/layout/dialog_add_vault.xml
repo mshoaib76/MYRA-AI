@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/vaultLabelInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Label (e.g. whatsapp, gallery)"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/vaultSecretInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="PIN or password"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <CheckBox
+        android:id="@+id/vaultPatternCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pattern (digit sequence e.g. 142536)" />
+</LinearLayout>

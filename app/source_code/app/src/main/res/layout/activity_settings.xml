@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.3"
+            android:text="SETTINGS"
+            android:textColor="@color/primary_red"
+            android:textSize="24sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gemini API Key"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/apiKeyInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="@string/api_key_hint"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_hint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Your Name"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/userNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="@string/your_name_hint"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_hint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="AI Model"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/modelSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Voice"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/voiceSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Personality"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp" />
+
+                <RadioGroup
+                    android:id="@+id/personalityGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <RadioButton
+                        android:id="@+id/personalityGf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GF Mode 💖"
+                        android:textColor="@color/text_primary" />
+
+                    <RadioButton
+                        android:id="@+id/personalityPro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Professional Mode 💼"
+                        android:textColor="@color/text_primary" />
+
+                    <RadioButton
+                        android:id="@+id/personalityAssistant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Assistant Mode 🤖"
+                        android:textColor="@color/text_primary" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personalization_title"
+                    android:textColor="@color/primary_red"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/personalization_hint"
+                    android:textColor="@color/text_hint"
+                    android:textSize="11sp" />
+
+                <EditText
+                    android:id="@+id/nicknameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="@string/nickname_hint"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary" />
+
+                <EditText
+                    android:id="@+id/myraNicknameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="@string/myra_nickname_hint"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary" />
+
+                <EditText
+                    android:id="@+id/cityInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="@string/city_hint"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary" />
+
+                <EditText
+                    android:id="@+id/hobbiesInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="@string/hobbies_hint"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary" />
+
+                <EditText
+                    android:id="@+id/birthdayInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="@string/birthday_hint"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/language_style_label"
+                    android:textColor="@color/text_primary"
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:id="@+id/languageSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/humor_label"
+                    android:textColor="@color/text_primary"
+                    android:textSize="12sp" />
+
+                <SeekBar
+                    android:id="@+id/humorSeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/energy_label"
+                    android:textColor="@color/text_primary"
+                    android:textSize="12sp" />
+
+                <SeekBar
+                    android:id="@+id/energySeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/response_length_label"
+                    android:textColor="@color/text_primary"
+                    android:textSize="12sp" />
+
+                <SeekBar
+                    android:id="@+id/lengthSeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="2" />
+
+                <EditText
+                    android:id="@+id/memoriesInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_input_field"
+                    android:gravity="top"
+                    android:hint="@string/memories_hint"
+                    android:minLines="3"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:id="@+id/streakText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/success"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/prime_card"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prime Contacts"
+                    android:textColor="@color/primary_red"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/primeContactsHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/prime_contacts_hint"
+                    android:textColor="@color/text_hint"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/waPrimeAlertsCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/wa_prime_alerts_toggle"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:id="@+id/notificationAccessStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:padding="8dp"
+                    android:text="@string/notification_access_off"
+                    android:textColor="@color/primary_red"
+                    android:textSize="12sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/primeContactsRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:nestedScrollingEnabled="false" />
+
+                <Button
+                    android:id="@+id/addPrimeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_prime_badge"
+                    android:text="@string/add_prime_contact"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin_section"
+                    android:textColor="@color/primary_red"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="PIN / pattern se locked apps unlock (Accessibility zaroori)"
+                    android:textColor="@color/text_hint"
+                    android:textSize="11sp" />
+
+                <EditText
+                    android:id="@+id/adminPinInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="@string/admin_pin_hint"
+                    android:inputType="numberPassword"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary" />
+
+                <EditText
+                    android:id="@+id/adminPatternInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="@string/admin_pattern_hint"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary" />
+
+                <CheckBox
+                    android:id="@+id/callerNameAnnounceCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/speak_caller_name_toggle"
+                    android:textColor="@color/text_primary" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/vaultRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:nestedScrollingEnabled="false" />
+
+                <Button
+                    android:id="@+id/addVaultBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_prime_badge"
+                    android:text="@string/vault_add"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/accessibilityStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:text="@string/accessibility_off"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/testYoutubeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_prime_badge"
+            android:text="TEST: Open YouTube"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/testWhatsappBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_prime_badge"
+            android:text="TEST: Open WhatsApp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_save_button"
+            android:text="@string/save"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/signOutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_prime_badge"
+            android:text="@string/sign_out"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>
