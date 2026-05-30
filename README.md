@@ -46,7 +46,7 @@ Add application screenshots:
 * Intelligent Response System
 
 ## APK Download 
-downlaod the apk file [here](https://github.com/mshoaib76/MYRA-AI/apk/app-release.apk)
+downlaod the apk file [here](https://github.com/mshoaib76/MYRA-AI/apk/MYRA.apk)
 
 
 ## How to Install the APK 
