@@ -22,7 +22,7 @@ Add application screenshots:
 ![Splash Screen](screenshots/dashboardscreen.jpeg)
 ![Login Screen](screenshots/Login_screen.jpeg)
 ![Signup Screen](screenshots/signup_screen.jpeg)
-![History Screen](screenshots/historyscreen.png)
+![History Screen](screenshots/historyscreen.jpeg)
 
 ## Features
 
@@ -46,7 +46,7 @@ Add application screenshots:
 * Intelligent Response System
 
 ## APK Download 
-downlaod the apk file [here](https://github.com/mshoaib76/MYRA-AI/tree/main/apk/MYRA.apk)
+downlaod the apk file [here](https://github.com/mshoaib76/MYRA-AI/tree/main/apk)
 
 
 ## How to Install the APK 
