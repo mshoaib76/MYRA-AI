@@ -46,7 +46,7 @@ Add application screenshots:
 * Intelligent Response System
 
 ## Demo video 
-Watch Demo [Video](www.google.com)
+Watch Demo [Video](https://www.facebook.com/share/v/1D5c5112Te/)
 
 ## APK Download 
 downlaod the apk file [here](https://github.com/mshoaib76/MYRA-AI/tree/main/apk)
