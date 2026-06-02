@@ -45,6 +45,9 @@ Add application screenshots:
 * Mobile Optimization
 * Intelligent Response System
 
+## Demo video 
+Watch Demo [Video](www.google.com)
+
 ## APK Download 
 downlaod the apk file [here](https://github.com/mshoaib76/MYRA-AI/tree/main/apk)
 
